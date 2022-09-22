@@ -7,7 +7,8 @@
     {% if post.url %}
     <li>
         <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
-          {{ post.date | date: "%b %-d, %Y" }}
+<!--           {{ post.date | date: "%b %-d, %Y" }} -->
+           {{ post.date | date: "%Y-%m-%d" }}
    
         </time>
         <div class='archive_title'>
@@ -40,7 +41,7 @@
     <li>
       <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
 <!--         {{ post.date | date: "%b %d" }} -->
-        {{ post.date | date: "YYYY-MM-DD" }}
+        {{ post.date | date: "%Y-%m-%d" }}
 
       </time>
       <div class='archive_title'>
